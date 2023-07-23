@@ -38,7 +38,7 @@ const FormStyless = ({ api, componenteExito, children, titulo, subtitulo, funcio
       <h1 className="form_main-h1_titulo">{titulo}</h1>
       <p className="form_main-p_subtitulo">{subtitulo}</p>
 
-      <form noValidate onSubmit={funciones.enviarFormulario} className="form_main-form">
+      <form noValidate={!!id} onSubmit={funciones.enviarFormulario} className="form_main-form">
         {children}
       </form>
     </main>
