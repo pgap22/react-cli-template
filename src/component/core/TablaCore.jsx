@@ -1,3 +1,5 @@
+//!This file is only an example
+
 import TablaCRUD from "src/component/tablaCrud"
 import useApi from "src/hooks/useAPI"
 
