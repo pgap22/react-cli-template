@@ -1,3 +1,5 @@
+//!This file is only an example
+
 import Form from "src/component/form"
 import Input from "src/component/Input"
 import { Navigate } from "react-router-dom" //If you want to redirect when user complete the form
