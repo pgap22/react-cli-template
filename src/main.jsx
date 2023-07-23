@@ -15,11 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/"+item,
-    element: <p>Here your Tabla component !</p>
+    element: <p>Here your Tabla component !</p> //Here your TablaComponent !
   },
   {
     path: "/"+item+"/:id",
-    element: <p>Here your FormComponent !</p>
+    element: <p>Here your FormComponent !</p> //Here your FormComponent
   }
 ])
 

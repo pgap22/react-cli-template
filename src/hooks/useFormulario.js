@@ -51,11 +51,5 @@ export { useFormulario };
 /*
 const campos = ["nombre", "email", "password", "avatar"] // Each table field
 
-  const {
-    nombre,     -> its like campos but without string
-    email,      -> its like campos but without string
-    password,   -> its like campos but without string
-    avatar,     -> its like campos but without string
-    registroExitoso, 
-    enviarFormulario } = useFormulario(campos, api)
+const [name, funciones] = useFormulario(campos, api)
 */
