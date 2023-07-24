@@ -52,13 +52,6 @@ const ApiProps = () => {
     </div>
   )
 }
-const NameProps = () => {
-  return (
-    <div className="space-y-4 m-4">
-      <p>Need to put 'name' as atributte in {'<TablaRead />'}</p>
-      <p>Example: <span className="p-2 font-mono bg-black text-white ">{`<TablaRead name={'your_item'}/>`}</span></p>
-    </div>
-  )
-}
+
 
 export default TablaRead
