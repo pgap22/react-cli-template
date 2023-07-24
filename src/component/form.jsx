@@ -43,7 +43,7 @@ const Form = ({ api, componenteExito, children, titulo, subtitulo, funciones }) 
       <h1 className="text-3xl font-bold">{titulo}</h1>
       <p className="text-xl text-gray-500">{subtitulo}</p>
 
-      <form noValidate onSubmit={funciones.enviarFormulario} className="mt-4 flex-col gap-3 flex">
+      <form noValidate={!!id} onSubmit={funciones.enviarFormulario} className="mt-4 flex-col gap-3 flex">
         {children}
       </form>
     </main>

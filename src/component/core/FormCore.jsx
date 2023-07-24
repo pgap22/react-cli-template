@@ -1,3 +1,5 @@
+//!This file is only an example
+
 import Form from "src/component/form"
 import Input from "src/component/Input"
 import { Navigate } from "react-router-dom" //If you want to redirect when user complete the form
@@ -8,11 +10,11 @@ import Button from "src/component/button" //Button with default styles
 //export default FormComponent() <- add export default on your pages Component
 
 function FormComponent() {
-    
+      
     //Same order is mandatory
-    const api = useApi("/express_route");
-    const campos = ["nombre", "password"] //Every Prisma field without id
-    const [name, funciones] = useFormulario(campos, api)
+    const api = useApi("/usuario") //Your express route
+    const campos = ["nombre", "email", "password", "avatar"] //Every Prisma field without id
+    const [names, funciones] = useFormulario(campos, api)
 
 
     return (
@@ -24,9 +26,12 @@ function FormComponent() {
             <Form
                 api={api}
                 funciones={funciones}
+                componenteExito={<Navigate to={"/usuario"} />}
             >
-                <Input name={name.nombre} />
-                <Input type="password" name={name.password} />
+                <Input name={names.nombre} placeholder="nombre" />
+                <Input name={names.email} placeholder="email" />
+                <Input name={names.password} placeholder="password" />
+                <Input type="file" name={names.avatar} placeholder="avatar" />
 
                 <Button>Send !</Button>
             </Form>
